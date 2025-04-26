@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{POST_TITLE} - Juan's Blog</title>
+    <meta name="description" content="{POST_DESCRIPTION}">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/blog/assets/css/blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="/" class="logo">Juan</a>
+                <div class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="/blog" class="active">Blog</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-post">
+        <!-- Post Header -->
+        <header class="post-header">
+            <div class="container">
+                <div class="post-meta">
+                    <time datetime="{POST_DATE_ISO}">{POST_DATE_FORMATTED}</time>
+                    <span class="post-category">{POST_CATEGORY}</span>
+                </div>
+                <h1>{POST_TITLE}</h1>
+                <div class="post-subtitle">{POST_SUBTITLE}</div>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="post-featured-image">
+            <div class="container">
+                <figure>
+                    <img src="{POST_FEATURED_IMAGE}" alt="{POST_FEATURED_IMAGE_ALT}">
+                    <figcaption>{POST_FEATURED_IMAGE_CAPTION}</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- Post Content -->
+        <article class="post-content">
+            <div class="container">
+                <!-- Content goes here -->
+                {POST_CONTENT}
+            </div>
+        </article>
+
+        <!-- Author Section -->
+        <section class="post-author">
+            <div class="container">
+                <div class="author-card">
+                    <img src="/assets/profile.jpeg" alt="Juan" class="author-image">
+                    <div class="author-info">
+                        <h3>Written by Juan</h3>
+                        <p>Creator and visual storyteller based in Jamaica, passionate about photography, cinematography, and sharing experiences through various creative mediums.</p>
+                        <div class="author-social">
+                            <a href="https://instagram.com/candid.jm" target="_blank">Instagram</a>
+                            <a href="https://youtube.com/@juanmcintosh" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Posts -->
+        <section class="related-posts">
+            <div class="container">
+                <h2>More Stories</h2>
+                <div class="posts-grid">
+                    <!-- Related posts will be dynamically inserted here -->
+                    {RELATED_POSTS}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Juan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
