@@ -1,0 +1,169 @@
+/* Navigation styles */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* Blog hero section modifications */
+.blog-hero {
+    padding: 4rem 0;
+    background-color: #fafafa;
+}
+
+.blog-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Blog posts section */
+.blog-posts {
+    padding: 4rem 0;
+}
+
+/* Featured post styles */
+.featured-post {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    background-color: #fafafa;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.featured-post .post-image {
+    height: 100%;
+}
+
+.featured-post .post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured-post .post-content {
+    padding: 3rem;
+}
+
+.featured-post h2 {
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+}
+
+/* Regular posts grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Post card styles */
+.post-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-image img {
+    transform: scale(1.05);
+}
+
+.post-content {
+    padding: 1.5rem;
+}
+
+.post-date {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.post-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+}
+
+.post-card p {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .featured-post {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-post .post-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .featured-post .post-content {
+        padding: 2rem;
+    }
+
+    .featured-post h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-hero h1 {
+        font-size: 2rem;
+    }
+
+    .featured-post .post-image {
+        height: 200px;
+    }
+} 
