@@ -29,7 +29,7 @@ body {
 /* Header styles */
 header {
     padding: 0.25rem 0;
-  /*  border-bottom: 1px solid #eee; */
+    border-bottom: none;
 }
 
 .logo {
@@ -159,6 +159,7 @@ footer {
 
     header {
         padding: 0.25rem 0;
+        border-bottom: none;
     }
 
     .logo-image {
