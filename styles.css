@@ -43,8 +43,8 @@ header {
 }
 
 .logo-image {
-    height: 50px;
-    width: auto;
+    height: 100px;
+    width: 100px;
     transition: opacity 0.2s ease;
 }
 
@@ -187,10 +187,18 @@ footer {
     }
 
     .logo-image {
-        height: 40px;
+        height: 80px;
+        width: 80px;
     }
 
     .nav-links {
         gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        height: 60px;
+        width: 60px;
     }
 } 
