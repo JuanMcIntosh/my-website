@@ -24,6 +24,7 @@ body {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 2rem;
+    border: none;
 }
 
 /* Header styles */
@@ -87,6 +88,11 @@ header {
 .hero {
     padding: 6rem 0;
     text-align: center;
+    border: none;
+}
+
+.landing-page .hero {
+    border: none !important;
 }
 
 .profile-image {
