@@ -28,15 +28,23 @@ body {
 
 /* Header styles */
 header {
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
+    padding: 0.25rem 0;
+  /*  border-bottom: 1px solid #eee; */
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    display: inline-block;
     text-decoration: none;
-    color: var(--primary-color);
+}
+
+.logo-image {
+    height: 120px;
+    width: auto;
+    transition: opacity 0.2s ease;
+}
+
+.logo-image:hover {
+    opacity: 0.8;
 }
 
 /* Hero section styles */
@@ -147,5 +155,13 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 0.25rem 0;
+    }
+
+    .logo-image {
+        height: 96px;
     }
 } 
