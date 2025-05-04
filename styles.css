@@ -29,7 +29,8 @@ body {
 
 /* Header styles */
 header {
-    padding: 0.25rem 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0;
 }
 
 .nav {
