@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan's Blog - Stories & Experiences</title>
     <link rel="icon" type="image/png" href="/src/assets/images/mywebsitelogo32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/src/css/blog-styles.css">
 </head>
 <body>
     <header>
@@ -29,88 +31,60 @@
         <!-- Blog Header Section -->
         <section class="hero blog-hero">
             <div class="container">
-                <h1>Stories & Experiences</h1>
+                <p class="eyebrow">Blog</p>
+                <h1>Stories &amp; Experiences</h1>
                 <p class="bio">Sharing my journey through photography, filmmaking, and creative exploration.</p>
             </div>
         </section>
 
-        <!-- Blog Posts Section -->
-        <section class="blog-posts">
+        <!-- Posts by category -->
+        <section class="links">
             <div class="container">
-                <!-- Featured Post -->
-                <article class="featured-post">
-                    <div class="post-image">
-                        <img src="/src/blog/assets/blogimages/journeytocinematography.png" alt="Featured post image">
+                <h2>From the blog</h2>
+                <div class="link-columns is-compact">
+                    <!-- Filmmaking -->
+                    <div class="link-column">
+                        <h3 class="column-title">Filmmaking</h3>
+                        <ul>
+                            <li>
+                                <a href="/src/blog/blogposts/journey-to-cinematography/" class="link-item">
+                                    <span class="link-item-title">My Journey into Cinematography <span class="external-link">↗</span></span>
+                                    <span class="link-item-desc">April 25, 2025 — From capturing simple moments to creating cinematic stories, here's how my passion for visual storytelling evolved over the years.</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="post-content">
-                        <span class="post-date">April 25, 2025</span>
-                        <h2>My Journey into Cinematography</h2>
-                        <p>From capturing simple moments to creating cinematic stories, here's how my passion for visual storytelling evolved over the years.</p>
-                        <a href="/src/blog/blogposts/journey-to-cinematography/" class="read-more">Read More <span class="external-link">↗</span></a>
+
+                    <!-- Photography -->
+                    <div class="link-column">
+                        <h3 class="column-title">Photography</h3>
+                        <ul>
+                            <li>
+                                <div class="link-item is-upcoming" aria-disabled="true">
+                                    <span class="link-item-title">Finding Beauty in Everyday Moments <span class="status-badge">Coming soon</span></span>
+                                    <span class="link-item-desc">How photography taught me to appreciate the small details in life that we often overlook.</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-
-                <!-- 
-                
-                //Regular Posts Grid //
-                <div class="posts-grid">
-                    <article class="post-card">
-                        <div class="post-image">
-                            <img src="assets/post-1.jpg" alt="Blog post image">
-                        </div>
-                        <div class="post-content">
-                            <span class="post-date">March 10, 2024</span>
-                            <h3>Finding Beauty in Everyday Moments</h3>
-                            <p>How photography taught me to appreciate the small details in life that we often overlook.</p>
-                            <a href="#" class="read-more">Read More <span class="external-link">↗</span></a>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-image">
-                            <img src="assets/post-2.jpg" alt="Blog post image">
-                        </div>
-                        <div class="post-content">
-                            <span class="post-date">March 5, 2024</span>
-                            <h3>The Art of Visual Storytelling</h3>
-                            <p>Exploring the power of narrative through imagery and how it shapes our perception.</p>
-                            <a href="#" class="read-more">Read More <span class="external-link">↗</span></a>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-image">
-                            <img src="assets/post-3.jpg" alt="Blog post image">
-                        </div>
-                        <div class="post-content">
-                            <span class="post-date">February 28, 2024</span>
-                            <h3>Creative Process Behind the Lens</h3>
-                            <p>A deep dive into my workflow and the tools that help bring my vision to life.</p>
-                            <a href="#" class="read-more">Read More <span class="external-link">↗</span></a>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-image">
-                            <img src="assets/post-4.jpg" alt="Blog post image">
-                        </div>
-                        <div class="post-content">
-                            <span class="post-date">February 20, 2024</span>
-                            <h3>Exploring Jamaica Through My Lens</h3>
-                            <p>Capturing the beauty, culture, and spirit of my homeland through photography.</p>
-                            <a href="#" class="read-more">Read More <span class="external-link">↗</span></a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
-
-    -->
-
     </main>
 
     <footer>
         <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com/thejuanmcintosh" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://x.com/thejuanmcintosh" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-2.602 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <a href="https://youtube.com/@juanmcintosh" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.94 29.94 0 0 0 1 11.75a29.94 29.94 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29.94 29.94 0 0 0 .46-5.25 29.94 29.94 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+            </div>
             <p>&copy; 2025 Juan. All rights reserved.</p>
         </div>
     </footer>

@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan - becoming a creator</title>
+    <title>Juan McIntosh — Photographer &amp; Filmmaker</title>
     <link rel="icon" type="image/png" href="/src/assets/images/mywebsitelogo32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="landing-page">
     <header>
         <nav>
             <div class="container">
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <div class="logo-container">
                         <img src="/src/assets/images/mywebsitelogo100x100.svg" alt="Juan" class="logo-image">
                     </div>
                 </a>
+                <div class="nav-links">
+                    <a href="/" class="active">Home</a>
+                    <a href="/src/blog/">Blog</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -26,55 +33,98 @@
             <div class="container">
                 <div class="profile">
                     <img src="/src/assets/profile.jpeg" alt="Profile" class="profile-image">
-                    <h1>I'm Juan -- becoming a creator.</h1>
+                    <p class="eyebrow">Jamaica, and wherever the story leads next</p>
+                    <h1>Juan McIntosh</h1>
+                    <p class="tagline">I shoot, I film, and I'm slowly teaching myself to build things like this site.</p>
                     <p class="bio">
-                        I started as a lover of art as a toddler from drawing and painting to now photography, film making, and website creation - a mix of everything.
-                        I also make cinematic YouTube videos for fun. I'm from Jamaica and I wish to travel the world and tell stories from my perspective and from the perspective of others.
+                        It started as a love of art as a toddler, drawing and painting, and grew into photography, filmmaking, and now website creation.
+                        I also make cinematic YouTube videos for fun. I'm from Jamaica and I want to travel the world and tell stories from my perspective and from the perspective of others.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects">
+        <!-- Links Section -->
+        <section class="links">
             <div class="container">
-                <h2>Creating</h2>
-                <div class="projects-grid">
-                    <!-- candid.jm -->
-                    <a href="https://instagram.com/candid.jm" target="_blank" class="project-card">
-                        <h3>candid.jm <span class="external-link">↗</span></h3>
-                        <p>Creative agency making high quality, professional content for businesses.</p>
-                    </a>
+                <h2>Where to find me</h2>
+                <div class="link-columns">
+                    <!-- Building -->
+                    <div class="link-column">
+                        <h3 class="column-title">Building</h3>
+                        <ul>
+                            <li>
+                                <a href="https://preporia.com" target="_blank" class="link-item">
+                                    <span class="link-item-title">preporia.com <span class="external-link">↗</span></span>
+                                    <span class="link-item-desc">A personal project built for a science course.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- Blog -->
-                    <a href="/src/blog/" class="project-card">
-                        <h3>Blog <span class="external-link">↗</span></h3>
-                        <p>Blogs sharing stories, experiences and links to interesting things.</p>
-                    </a>
+                    <!-- Watch -->
+                    <div class="link-column">
+                        <h3 class="column-title">Watch</h3>
+                        <ul>
+                            <li>
+                                <a href="https://youtube.com/@juanmcintosh" target="_blank" class="link-item">
+                                    <span class="link-item-title">YouTube / Cinematography <span class="external-link">↗</span></span>
+                                    <span class="link-item-desc">Uploading creative cinematic videos.</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/candid.jm" target="_blank" class="link-item">
+                                    <span class="link-item-title">candid.jm <span class="external-link">↗</span></span>
+                                    <span class="link-item-desc">Creative agency making high quality, professional content for businesses.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- YouTube Cinematography -->
-                    <a href="https://youtube.com/@juanmcintosh" target="_blank" class="project-card">
-                        <h3>YouTube / Cinematography <span class="external-link">↗</span></h3>
-                        <p>Uploading creative cinematic videos.</p>
-                    </a>
+                    <!-- Downloads -->
+                    <div class="link-column">
+                        <h3 class="column-title">Downloads</h3>
+                        <ul>
+                            <li>
+                                <div class="link-item is-upcoming" aria-disabled="true">
+                                    <span class="link-item-title">Lightroom Presets <span class="status-badge">Coming soon</span></span>
+                                    <span class="link-item-desc">Custom presets made from years of editing photos.</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-item is-upcoming" aria-disabled="true">
+                                    <span class="link-item-title">Wallpapers <span class="status-badge">Coming soon</span></span>
+                                    <span class="link-item-desc">Premium wallpapers for desktop and mobile.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- Lightroom Presets -->
-                    <a href="presets.html" class="project-card">
-                        <h3>Lightroom Presets <span class="external-link">↗</span></h3>
-                        <p>A series of Lightroom presets custom made from years of editing photos.</p>
-                    </a>
+                    <!-- Read -->
+                    <div class="link-column">
+                        <h3 class="column-title">Read</h3>
+                        <ul>
+                            <li>
+                                <a href="/src/blog/" class="link-item">
+                                    <span class="link-item-title">Blog <span class="external-link">↗</span></span>
+                                    <span class="link-item-desc">Stories, experiences and links to interesting things.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- Wallpapers -->
-                    <a href="wallpapers.html" class="project-card">
-                        <h3>Wallpapers <span class="external-link">↗</span></h3>
-                        <p>Designing and making premium wallpapers for desktops and mobile.</p>
-                    </a>
-
-                    <!-- AI -->
-                    <a href="ai-projects.html" class="project-card">
-                        <h3>AI Creativities <span class="external-link">↗</span></h3>
-                        <p>Project created using AI.</p>
-                    </a>
+                    <!-- Experiments -->
+                    <div class="link-column">
+                        <h3 class="column-title">Experiments</h3>
+                        <ul>
+                            <li>
+                                <div class="link-item is-upcoming" aria-disabled="true">
+                                    <span class="link-item-title">AI Creativities <span class="status-badge">Coming soon</span></span>
+                                    <span class="link-item-desc">Projects created using AI.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -82,6 +132,17 @@
 
     <footer>
         <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com/thejuanmcintosh" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://x.com/thejuanmcintosh" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-2.602 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                </a>
+                <a href="https://youtube.com/@juanmcintosh" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29.94 29.94 0 0 0 1 11.75a29.94 29.94 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29.94 29.94 0 0 0 .46-5.25 29.94 29.94 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                </a>
+            </div>
             <p>&copy; 2025 Juan. All rights reserved.</p>
         </div>
     </footer>
